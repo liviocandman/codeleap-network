@@ -2,6 +2,10 @@ django>=4.2,<5.0
 djangorestframework>=3.14,<4.0
 django-cors-headers>=4.3,<5.0
 
+# Firebase
+firebase-admin>=6.2.0
+django-filter>=23.2
+
 # API Proxy
 requests>=2.30.0,<3.0
 
