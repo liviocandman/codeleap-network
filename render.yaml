@@ -1,5 +1,5 @@
 services:
-  # O Backend Django Atuando como Proxy
+  # Backend Django
   - type: web
     name: codeleap-backend
     env: python
@@ -22,8 +22,8 @@ services:
       - key: PYTHON_VERSION
         value: "3.11.4"
 
-  # O Banco de dados PostgreSQL para armazenar os Likes e Comments
-  - type: pgbouncer
+  # PostgreSQL Likes, Comments
+  - type: database
     name: codeleap-db
     region: ohio
     plan: free
