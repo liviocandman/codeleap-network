@@ -22,9 +22,9 @@ services:
       - key: PYTHON_VERSION
         value: "3.11.4"
 
-  # PostgreSQL Likes, Comments
-  - type: database
-    name: codeleap-db
+# PostgreSQL 
+databases:
+  - name: codeleap-db
     region: ohio
     plan: free
     databaseName: codeleap
