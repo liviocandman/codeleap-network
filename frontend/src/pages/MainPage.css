@@ -1,0 +1,28 @@
+.main-page {
+  min-height: 100vh;
+  background: #DDDDDD;
+  display: flex;
+  justify-content: center;
+}
+
+.main-page__container {
+  width: 100%;
+  max-width: 800px;
+  background: #FFFFFF;
+  min-height: 100vh;
+}
+
+.main-page__content {
+  padding: 24px;
+}
+
+.main-page__status {
+  text-align: center;
+  font-size: 16px;
+  color: #777777;
+  padding: 40px 0;
+}
+
+.main-page__status--error {
+  color: #FF5151;
+}

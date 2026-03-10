@@ -1,0 +1,63 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(119, 119, 119, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 660px;
+  width: 90%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.modal__title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 30px 0;
+}
+
+.modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* Used by both DeleteModal and EditModal */
+.modal__label {
+  display: block;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.modal__input,
+.modal__textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  color: #000000;
+}
+
+.modal__input:focus,
+.modal__textarea:focus {
+  border-color: #7695EC;
+}
+
+.modal__textarea {
+  resize: vertical;
+  min-height: 74px;
+}

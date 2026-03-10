@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #DDDDDD;
+  color: #000000;
+}
+
+/* ── Shared button styles ─────────────────────────────────── */
+
+.btn {
+  padding: 7px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.15s, background-color 0.15s;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn:not(:disabled):hover {
+  opacity: 0.9;
+}
+
+.btn--primary {
+  background-color: #7695EC;
+  color: #FFFFFF;
+}
+
+.btn--danger {
+  background-color: #FF5151;
+  color: #FFFFFF;
+}
+
+.btn--success {
+  background-color: #47B960;
+  color: #FFFFFF;
+}
+
+.btn--outline {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #999999;
+}
+
+.btn--outline:not(:disabled):hover {
+  background-color: #F5F5F5;
+}
